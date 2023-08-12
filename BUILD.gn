@@ -177,6 +177,11 @@ template("generate_icu_component") {
       configs += [ ":icu_code" ]
       configs += extra_configs
       public_configs = [ ":icu_config" ]
+      #ifdef OHOS_NWEB_EX
+      if (ohos_nweb_ex_config_name != "") {
+        configs -= [ "//build/config:ohos_nweb_ex_def_main" ]
+        configs += [ "//build/config:ohos_nweb_ex_def_other" ]
+      }  #endif  // OHOS_NWEB_EX
     }
   } else {
     component(target_name) {
@@ -225,6 +230,11 @@ template("generate_icu_component") {
         configs -= [ "//build/config/compiler:thin_archive" ]
         complete_static_lib = true
       }
+      #ifdef OHOS_NWEB_EX
+      if (ohos_nweb_ex_config_name != "") {
+        configs -= [ "//build/config:ohos_nweb_ex_def_main" ]
+        configs += [ "//build/config:ohos_nweb_ex_def_other" ]
+      }  #endif  // OHOS_NWEB_EX
     }
   }
 }
