@@ -3,28 +3,17 @@
     <oatconfig>
         <policylist>
             <policy name="projectPolicy" desc="">
+                <policyitem type="compatibility" name="Unicode-TOU" path=".*" desc="" />
                 <policyitem type="compatibility" name="GPLStyleLicense" path="source.*" desc="" />
-                <policyitem type="compatibility" name="Unicode-TOU" path=".*" desc="" /> 
-                <policyitem type="compatibility" name="Technology" path="source.*" desc="" />
-                <policyitem type="compatibility" name="others" path="source.*" desc="" />
+                <policyitem type="compatibility" name="NTP" path="source.*" desc="" /> 
             </policy>
         </policylist>
         <filefilterlist>
             <filefilter name="defaultPolicyFilter"
                 desc="Filters for compatibility,license header policies">
-                <filteritem type="filepath" name="third_party/llvm-10.0/llvm/include/llvm/Support/LICENSE.TXT"
+                <filteritem type="filepath" name="source/common/emojiprops.h"
                     desc="" />
-                <filteritem type="filepath" name="third_party/SPIRV-Tools/BUILD.bazel"
-                    desc="" />
-                <filteritem type="filepath" name="third_party/llvm-subzero/LICENSE.TXT"
-                    desc="" />
-                <filteritem type="filepath" name="third_party/subzero/LICENSE.TXT"
-                    desc="" />
-                <filteritem type="filepath" name="third_party/subzero/bloat/README.chromium"
-                    desc="" />
-                <filteritem type="filepath" name="third_party/llvm-10.0/Android.bp"
-                    desc="" />
-                <filteritem type="filepath" name="third_party/SPIRV-Headers/BUILD.bazel"
+                <filteritem type="filepath" name="source/common/emojiprops.cpp"
                     desc="" />
                 <filteritem type="filepath" name="README.OpenSource"
                     desc="" />
@@ -32,17 +21,38 @@
                 <filefilter name="defaultFilter">
                 <filteritem type="filepath" name="README.OpenSource"
                     desc="" />
+                <filteritem type="filepath" name=".*dat"
+                    desc="" />
+                <filteritem type="filepath" name=".*nrm"
+                    desc="" />
+                <filteritem type="filepath" name=".*res"
+                    desc="" />
+                <filteritem type="filepath" name=".*bin"
+                    desc="" />
+                <filteritem type="filepath" name=".*icu"
+                    desc="" />
+                <filteritem type="filepath" name="source/test/fuzzer/collator_rulebased_ICU-21041.fuzz"
+                    desc="" />
+                <filteritem type="filepath" name="source/test/testdata/TestFont1.otf"
+                    desc="" />
+                <filteritem type="filepath" name="tzres/zoneinfo64.res"
+                    desc="" />
+                <filteritem type="filepath" name="source/test/testdata/encoded.utf16be"
+                    desc="" />
             </filefilter> 
         </filefilterlist>
         <licensematcherlist>
-            <licensematcher name=" Technology" desc="">
+            <licensematcher name="NTP" desc="">
                 <licensetext name="
-                # Copyright 1991 by the Massachusetts Institute of Technology
-            " desc="" />
-            </licensematcher>
-             <licensematcher name=" others" desc="">
-                <licensetext name="
-               Unicode, Inc. and others.
+                # Permission to use, copy, modify, distribute, and sell this software and its
+                # documentation for any purpose is hereby granted without fee, provided that
+                # the above copyright notice appear in all copies and that both that
+                # copyright notice and this permission notice appear in supporting
+                # documentation, and that the name of M.I.T. not be used in advertising or
+                # publicity pertaining to distribution of the software without specific,
+                # written prior permission.  M.I.T. makes no representations about the
+                # suitability of this software for any purpose. It is provided &quot;as is&quot;
+                # without express or implied warranty.
             " desc="" />
             </licensematcher>
         </licensematcherlist>
