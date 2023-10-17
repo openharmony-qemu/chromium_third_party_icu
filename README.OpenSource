@@ -1,26 +1,11 @@
 [
     {
-        "Name": "icu",                   # 上游开源软件名全称
-        "License": "NTP"          # 上游开源软件中包含的许可证信息
-        "License File": "LICENSE",  # 许可证所在文件路径
+        "Name": "icu",
+        "License": "ICU License 58 and later",
+        "License File": "LICENSE",
         "Version Number": "609143a639dcc0884a87c899614895ce129afdb8",
-        "Upstream URL": "https://chromium.googlesource.com/chromium/deps/icu.git@609143a639dcc0884a87c899614895ce129afdb8",   # 上游软件包发布地址
-        "Description": "第三方软件icu"           # 开源软件功能描述
-    },
-    {
-        "Name": "icu",                   # 上游开源软件名全称
-        "License": "Unicode-TOU"         # 上游开源软件中包含的许可证信息
-        "License File": "LICENSE",  # 许可证所在文件路径
-        "Version Number": "609143a639dcc0884a87c899614895ce129afdb8",
-        "Upstream URL": "https://chromium.googlesource.com/chromium/deps/icu.git@609143a639dcc0884a87c899614895ce129afdb8",   # 上游软件包发布地址
-        "Description": "第三方软件icu"           # 开源软件功能描述
-    },
-    {
-        "Name": "icu",                   # 上游开源软件名全称
-        "License": "GPLStyleLicense"          # 上游开源软件中包含的许可证信息
-        "License File": "LICENSE",  # 许可证所在文件路径
-        "Version Number": "609143a639dcc0884a87c899614895ce129afdb8",
-        "Upstream URL": "https://chromium.googlesource.com/chromium/deps/icu.git@609143a639dcc0884a87c899614895ce129afdb8",   # 上游软件包发布地址
-        "Description": "第三方软件icu"           # 开源软件功能描述
+        "Owner": "huangjiewen2@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/chromium/deps/icu.git@609143a639dcc0884a87c899614895ce129afdb8",
+        "Description": "第三方软件icu"
     }
 ]
