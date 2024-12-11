@@ -1,7 +1,7 @@
 [
     {
         "Name": "icu",
-        "License": "BSD-3-Clause",
+        "License": "Unicode-TOU",
         "License File": "LICENSE",
         "Version Number": "609143a639dcc0884a87c899614895ce129afdb8",
         "Owner": "huangjiewen2@huawei.com",

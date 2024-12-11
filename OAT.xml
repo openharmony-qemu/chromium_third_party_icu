@@ -78,12 +78,10 @@ used to filter file path.
                 <policyitem type="compatibility" name="Unicode-TOU" path="license.html" desc="经法务确认为宽松型许可证" />
                 <policyitem type="compatibility" name="Unicode-TOU" path="source/mkinstalldirs" desc="经法务确认为宽松型许可证" />
                 <policyitem type="compatibility" name="Unicode-TOU" path="source/install-sh" desc="经法务确认为宽松型许可证" />
-                <policyitem type="compatibility" name="Unicode-TOU" path="LICENSE" desc="经法务确认为宽松型许可证" />
                 <policyitem type="compatibility" name="Unicode-TOU" path="source/runConfigureICU" desc="经法务确认为宽松型许可证" />
                 <policyitem type="compatibility" name="GPLStyleLicense" path="source/config.sub" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="GPLStyleLicense" path="source/config.guess" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="NTP" path="source/install-sh" desc="经法务确认为宽松型许可证" />
-                <policyitem type="compatibility" name="GPL-2.0+" path="LICENSE" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="SPDX:Unicode-DFS-2016" path="source/data/dtd/cldr/common/dtd/ldml.dtd" desc="经法务确认为宽松型许可证" />
                 <policyitem type="compatibility" name="SPDX:Unicode-DFS-2016" path="source/data/dtd/cldr/common/dtd/ldmlICU.dtd" desc="经法务确认为宽松型许可证" />
             </policy>
@@ -92,6 +90,7 @@ used to filter file path.
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility,license header policies">
                 <filteritem type="filepath" name="source/common/emojiprops.h"  desc="chromium原生文件无license" />
                 <filteritem type="filepath" name="source/common/emojiprops.cpp" desc="chromium原生文件无license" />
+                <filteritem type="filepath" name="LICENSE" desc="该文件为版权文件, 版权为Unicode-TOU" />
             </filefilter>
             <filefilter name="readmeOpenSourcefileNamePolicFilter">
                 <filteritem type="filepath" name="README.OpenSource" desc="Filter readme.opensource files" />
