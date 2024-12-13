@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "icu",
+        "License": "Unicode-TOU",
+        "License File": "LICENSE",
+        "Version Number": "609143a639dcc0884a87c899614895ce129afdb8",
+        "Owner": "huangjiewen2@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/chromium/deps/icu.git@609143a639dcc0884a87c899614895ce129afdb8",
+        "Description": "第三方软件icu，一款智能化管理设备，它突出的优势就是具备智能化的特点"
+    }
+]
