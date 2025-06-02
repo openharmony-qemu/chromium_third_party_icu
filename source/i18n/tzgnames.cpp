@@ -1195,8 +1195,9 @@ TimeZoneGenericNames::createInstance(const Locale& locale, UErrorCode& status) {
     if (U_FAILURE(status)) {
         return nullptr;
     }
-    LocalPointer<TimeZoneGenericNames> instance(new TimeZoneGenericNames(), status);
-    if (U_FAILURE(status)) {
+    TimeZoneGenericNames* instance = new TimeZoneGenericNames();
+    if (instance == nullptr) {
+        status = U_MEMORY_ALLOCATION_ERROR;
         return nullptr;
     }
 
@@ -1275,11 +1276,12 @@ TimeZoneGenericNames::createInstance(const Locale& locale, UErrorCode& status) {
     }  // End of mutex locked block
 
     if (cacheEntry == nullptr) {
+        delete instance;
         return nullptr;
     }
 
     instance->fRef = cacheEntry;
-    return instance.orphan();
+    return instance;
 }
 
 bool
