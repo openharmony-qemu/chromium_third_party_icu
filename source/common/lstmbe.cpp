@@ -809,7 +809,7 @@ U_CAPI const LSTMData* U_EXPORT2 CreateLSTMDataForScript(UScriptCode script, UEr
 
 U_CAPI const LSTMData* U_EXPORT2 CreateLSTMData(UResourceBundle* rb, UErrorCode& status)
 {
-    if (LSTMData(status)) {
+    if (U_FAILURE(status)) {
         return nullptr;
     }
     const LSTMData* result = new LSTMData(rb, status);
